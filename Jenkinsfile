@@ -6,15 +6,6 @@ pipeline {
                 sh '''
                 ls
                 echo "hola"
-                echo $prueba
-                pwd
-                ls -lrt
-                echo $password
-                pwd
-                uname
-                docker ps
-                hostname
-                touch 1
                 '''
             }
         }
