@@ -17,12 +17,21 @@ pipeline {
                 '''
             }
         }
+        stage('QA Testing') {
+            steps {
+                sh '''
+                echo "hola mundo QA Testing"
+                '''
+            }
+            
+        }
         stage('deployar') {
             steps {
                 sh '''
                 echo "hola mundo deployed"
                 '''
             }
+            
         }
     }
 }
